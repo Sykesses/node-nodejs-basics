@@ -12,7 +12,6 @@ const read = async () => {
       throw new Error("FS operation 1 failed");
     } else {
       readFile(folderPath1, { encoding: "utf-8" }, (err, data) => {
-        //stat не нужен в read
         if (err) {
           throw new Error("FS operation 2 failed");
         } else {
